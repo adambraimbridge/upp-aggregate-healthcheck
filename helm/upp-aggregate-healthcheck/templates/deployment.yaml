@@ -59,7 +59,7 @@ spec:
 {{ toYaml .Values.resources | indent 12 }}
 ---
 {{ if eq .Values.secondstack.enabled "true" }}
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Values.service.name }}-second
