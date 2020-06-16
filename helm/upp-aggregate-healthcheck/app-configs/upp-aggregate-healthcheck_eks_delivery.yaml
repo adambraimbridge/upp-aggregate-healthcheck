@@ -4,7 +4,7 @@ secondstack:
   enabled: "true"
 service:
   name: upp-aggregate-healthcheck
-eksCluster: false
+eksCluster: true
 env:
   PATH_PREFIX: "/__health"
 categories:
